@@ -1,0 +1,271 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.card{
+ margin: 100px auto;
+ width:700px;
+ 
+
+}
+legend{
+    text-transform: uppercase;
+    padding: 5px 10px;
+    
+    /* background-color: white; */
+    
+}
+header{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.names{
+    font-size: 20px;
+  
+}
+.container{
+    margin:30px;
+    padding: 10px 20px;
+    
+    
+}
+.main{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content:space-around;
+}
+.sec1,.sec2{
+    display: flex;
+    flex-direction: column;
+}
+.sec1{
+    width:10%;
+    gap: 25px;
+    align-items: flex-start;
+}
+.sec2{
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+.form-control.fail .tbox{
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.form-control.success .tbox{
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+
+.but{
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+   margin-left: 40%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    
+}
+.but:hover{
+    color: white;
+    background-color: darkgray;
+    transition: all 0.3s;
+}
+.tbox,.drop{
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+/* .val{
+    
+    visibility: visible;
+    position: absolute;
+    color: red;
+    
+
+} */
+/* .valid{
+    visibility: visible;
+    color: red;
+    position: absolute;
+    top:30px;
+    left:0;
+} */
+/* .val2{
+    visibility: visible;
+    color: red;
+    position: absolute;
+  top:60px;
+  left: 0;
+} */
+
+fieldset{
+    background-color: #f2f2f2;
+    box-shadow: 5px 10px 40px 5px #888888;
+    border-radius: 5px;
+    /* border: 2px solid black;
+     */
+}
+.dob{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* fieldset:hover{
+    translate: -5px -10px;
+} */
+
+.check{
+    height: 15px;
+    width: 15px;
+}
+/* .drop{
+    padding: ;
+} */
+textarea{
+    border-radius: 5px;
+}
+/* .icon1,.icon2{
+    visibility: hidden;
+    position: absolute;
+} */
+.form-control.fail .icon1{
+    visibility:visible;
+    color: red;
+}
+
+
+.form-control.success .icon2{
+    visibility: visible;
+    color: #2ecc71;
+}
+.form-control{
+    position: relative;
+}
+.form-control ion-icon{
+    visibility: hidden;
+    right: 10px;
+    top: 6px;
+    font-size: 20px;
+    position:absolute;
+    
+}
+.val{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    color: red;
+    visibility: hidden;
+}
+.form-control.fail .val{
+    visibility: visible;
+}
+
+
+</style>
+
+<!-- Toolbar -->
+<div class="card">
+    <header>
+        <h1>Html Forms</h1>
+    </header>
+    <form id="form">
+        <fieldset>
+            <legend><h2>Details</h2></legend>
+                 <div class="container">
+                    <div class="main">
+                        <div class="sec1">
+            <label class="names">Name</label>
+            <label class="names">Number</label>
+            <label class="names">Email</label>
+            <label class="names">Gender</label>
+            <label class="names">DOB</label>
+            <label class="names">City</label>
+            <label class="names">Address</label>
+    </div>
+
+    <div class="sec2">
+
+            <div class="form-control"><input  id="fname" class=" a tbox tbox1"   type="text" placeholder="Enter ur Name"  >
+            <small class="val ">Username is required</small>
+            <ion-icon class=" icon1 " name="alert-circle-outline"></ion-icon>
+            <ion-icon class="icon2" name="checkmark-circle-outline"></ion-icon></div>
+            
+            
+            <div class="form-control"><input  id="fphone" class="tbox" type="tel"  maxlength="12" placeholder="Phone Number" >
+            <small class="val val2 "> Ph no required</small>
+            <ion-icon class=" icon1 " name="alert-circle-outline"></ion-icon>
+            <ion-icon class="icon2" name="checkmark-circle-outline"></ion-icon></div>
+            
+            
+            <div class="form-control"><input id="fmail" class="tbox"  type="email" placeholder="Email">
+            <small class="val ">Mail required</small>
+            <ion-icon class=" icon1 " name="alert-circle-outline"></ion-icon>
+            <ion-icon class="icon2" name="checkmark-circle-outline"></ion-icon></div>
+        
+        <div>
+            <input class="gen1" type="radio" name="gender" value="Male">
+            <label class="names ">Male</label>&nbsp;&nbsp;
+            <input class="gen2" type="radio" name="gender" value="Female">
+            <label class="names">Female</label>
+        </div>
+
+            <input class="dob" type="date">
+
+            <select class="drop">
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kochin">Kochin</option>
+            </select>
+            <textarea class="names tarea "></textarea>
+            <!-- <input class="names addr" type="text" > -->
+            <div>
+                <input class="check" type="checkbox" value="signed in">&nbsp;&nbsp;Keep me signed in 
+            </div>
+            
+    </div>
+</div>         
+            
+            
+            <input class="but" type = "button" (click)="fin()"  value="Save" >
+</div>
+
+        </fieldset>
+        <div class="hlo"></div>
+    </form>
+</div>
+
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
